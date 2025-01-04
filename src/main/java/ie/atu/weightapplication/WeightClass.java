@@ -1,14 +1,14 @@
 package ie.atu.weightapplication;
 
 import jakarta.persistence.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Entity
-@Table(name = "weight-class")
+@Table(name = "weight_class")
 public class WeightClass {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long weightId;
-
     private String weightRange;
 
     public WeightClass() {}
