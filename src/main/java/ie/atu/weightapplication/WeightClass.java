@@ -17,13 +17,12 @@ public class WeightClass {
     private int quadExt;
     private int dbBench;
     private int pulldown;
-    private int row;
     private int latRaise;
     private int curls;
 
     public WeightClass() {}
 
-    public WeightClass(Long id, String weightRange, int squat, int deadlift, int rdl, int hstCurl, int quadExt, int dbBench, int pulldown, int row, int latRaise, int curls) {
+    public WeightClass(Long id, String weightRange, int squat, int deadlift, int rdl, int hstCurl, int quadExt, int dbBench, int pulldown, int latRaise, int curls) {
         this.weightId = id;
         this.weightRange = weightRange;
         this.squat = squat;
@@ -33,7 +32,6 @@ public class WeightClass {
         this.quadExt = quadExt;
         this.dbBench = dbBench;
         this.pulldown = pulldown;
-        this.row = row;
         this.latRaise = latRaise;
         this.curls = curls;
     }
@@ -107,14 +105,6 @@ public class WeightClass {
 
     public void setPulldown(int pulldown) {
         this.pulldown = pulldown;
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
     }
 
     public int getLatRaise() {
